@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.programmingstudies.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_laptop_white_24dp"
+        android:background="#b8d0d8"
+        android:padding="16dp"/>
+
+    <ImageView
+        android:id="@+id/imgGroup"
+        android:layout_width="match_parent"
+        android:src="@drawable/languages"
+        android:layout_below="@id/imgHeader"
+        android:scaleType="center"
+        android:layout_height="112dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_below="@id/imgGroup"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtGroupName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Programming Studies"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/txtGroupDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group for the ones that love to program and like to learn all about the new languages"
+            android:paddingBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/txtFindUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find us:"
+            android:textSize="15sp"
+            android:textStyle="normal|bold"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/txtSlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="http://programmingstudies.slack.com"
+            android:paddingBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/txtWhen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="When"
+            android:textSize="15sp"
+            android:textStyle="normal|bold"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/txtHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Everyday at 12:00pm"
+            android:paddingBottom="16dp"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
